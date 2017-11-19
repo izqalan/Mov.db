@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<title>Mov.db</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="animate.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
 </head>
 <body>
 	<div class="navbar">
@@ -19,8 +19,8 @@
 	</div>
 	<!-- content -->
 	<section>
-		<form class="animated zoomIn big-search" id="searchForm" action="" method="">
-			<input class="search" id="searchText" type="search" name="s" placeholder="search database">
+		<form class="animated zoomIn big-search" id="searchForm" action="index.php" method="post">
+			<input class="search" id="searchText" type="search" name="search" placeholder="search database">
 			<input class="submit" type="submit" name="subbtn" value="search">
 		</form>
 	</section>
