@@ -17,5 +17,5 @@ index.php will only run whe the wamp server is up
 </ul>
 <h2>Third-party</h2>
 <ul>
-  <li>Animate.css for animation</li>
+  <li>Animate.css for animation by <a href="https://github.com/daneden/animate.css">This sweet boy</a></li>
 </ul>
