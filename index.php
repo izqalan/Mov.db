@@ -1,15 +1,17 @@
+<?php include('connection.php') ?>
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 	<title>Mov.db</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
 </head>
 <body>
 	<div class="navbar">
-		<a href="index.html">
-			<img src="src/logow.png" height="30" alt="mov.db logo" width="100" >
+		<a href="index.php">
+			<img src="src/logow.png" height="30px" alt="mov.db logo" width="100px" >
 		</a>
 		<ul >
 			<li><a href="index.html">Home</a></li>
@@ -18,22 +20,35 @@
 		</ul>
 	</div>
 	<!-- content -->
-	<section>
-		<form class="animated zoomIn big-search" id="searchForm" action="index.php" method="post">
-			<input class="search" id="searchText" type="search" name="search" placeholder="search database">
-			<input class="submit" type="submit" name="subbtn" value="search">
-		</form>
-	</section>
-	<div class="container">
-		<div id="movies" class="row">
-			
-		</div>
+	<!-- sometimes the button not working-->
+	<form class="animated zoomIn big-search" id="searchForm" method="post" action="index.php">
+		<input class="search" id="searchText" type="search" name="search" placeholder="search database" required />
+		<input class="submit" type="submit" name="submit" value="search"/>
+	</form>
+	<!-- script is somewhat working but wont display shit-->
+	<!-- and footer dissapeared -->
+	<!-- kill me -->
+	<div class="wrapper">
+	<?php
+	if(isset($_POST["search"])){
+		$searchq = $_POST["search"];
+		$query = mysqli_query($con, "SELECT * FROM movielibrary WHERE movname LIKE '%$searchq%'") or die();
+		while ($row = mysqli_fetch_array($query, MYSQLI_ASSOC)) {
+			# code...
+			echo("<tr><td>");
+			echo $row['MovID'];
+			echo("</td></td>");
+			echo $row['MovName'];
+			echo("</td></tr>");
+		}
+	echo "</table></center>";
+	}
+	?>
 	</div>
-
-
+	
 	<!-- end content -->
 	<footer class="footer">
-		<p>test</p>
+		<p style="font-size: 8pt;"><i>© 2017 Izqalan, Nu'man, Yew CS, Wan .E SOME RIGHT RESERVED<i></p>
 	</footer>
 	<script
 	src="https://code.jquery.com/jquery-3.2.1.min.js"
