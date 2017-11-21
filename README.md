@@ -13,7 +13,7 @@ index.php will only run whe the wamp server is up
 <h2>Softwares used</h2>
 <ul>
   <li>Wamp server</li>
-  <li>Sublime text editor</li>
+  <li>Sublime text editor or any editor of your choice</li>
 </ul>
 <h2>Third-party</h2>
 <ul>
