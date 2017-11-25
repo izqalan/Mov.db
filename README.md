@@ -9,9 +9,9 @@ index.php will only run whe the wamp server is up
   <li>Login</li>
   <li>Admin permission</li>
   <ul><li>Edit/Delete movies details</li></ul>
-  <li>About page</li>
-  <li>Lists of films page</li>
   <li>Search engine</li>
+  <li>About page <i>(Optional)</i></li>
+  <li>Lists of films page <i>(Optional)</i></li>
 </ul>
 <h2>Softwares used</h2>
 <ul>
