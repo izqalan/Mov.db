@@ -22,7 +22,7 @@
 	<!-- content -->
 	<!-- sometimes the button not working-->
 	<form class="animated zoomIn big-search" id="searchForm" method="post" action="index.php">
-		<input class="search" id="searchText" type="search" name="search" placeholder="search database" required />
+		<input class="search" id="searchText" type="text" name="search" placeholder="search database" required />
 		<input class="submit" type="submit" name="submit" value="search"/>
 	</form>
 	<!-- script is somewhat working but wont display shit-->

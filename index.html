@@ -1,8 +1,6 @@
-<?php include 'connection.php'; ?>
 <!DOCTYPE html>
 <html>
 <head>
-	<!-- Copy paste this template into a new file -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 	<title>Mov.db</title>
@@ -15,18 +13,26 @@
 			<img src="src/logow.png" height="30px" alt="mov.db logo" width="100px" >
 		</a>
 		<ul >
-			<li><a href="index.php">Home</a></li>
+			<li><a href="index.html">Home</a></li>
 			<li><a href="list.html">Lists</a></li>
 			<li><a href="about.html">About us</a></li>
-			<li><a href="login.php">Login</a></li>
 		</ul>
 	</div>
 	<!-- content -->
-	<!-- end content-->
+	<!-- sometimes the button not working-->
+	<form class="animated zoomIn big-search" id="searchForm" method="post" action="find.php">
+		<input class="search" id="searchText" type="text" name="search" placeholder="search database" required />
+		<input class="submit" type="submit" name="submit" value="search"/>
+	</form>
+	
+	<!-- and footer dissapeared -->
+	<!-- kill me -->
+	
+	
+	<!-- end content -->
 	<footer class="footer">
 		<p style="font-size: 8pt;"><i>© 2017 Izqalan, Nu'man, Yew CS, Wan .E SOME RIGHT RESERVED<i></p>
 	</footer>
 	
-
 </body>
 </html>
