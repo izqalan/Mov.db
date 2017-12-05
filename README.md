@@ -6,14 +6,17 @@ Mov.db is a film database.
 index.php will only run whe the wamp server is up
 <h2>Planned features</h2>
 <ul>
-  <li>About page</li>
-  <li>Lists of films page</li>
+  <li>Login</li>
+  <li>Admin permission</li>
+  <ul><li>Edit/Delete movies details</li></ul>
   <li>Search engine</li>
+  <li>About page <i>(Optional)</i></li>
+  <li>Lists of films page <i>(Optional)</i></li>
 </ul>
 <h2>Softwares used</h2>
 <ul>
   <li>Wamp server</li>
-  <li>Sublime text editor</li>
+  <li>Sublime text editor or any editor of your choice</li>
 </ul>
 <h2>Third-party</h2>
 <ul>
