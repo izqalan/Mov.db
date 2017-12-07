@@ -66,8 +66,21 @@ body{
 	margin-top: 120px;
 }
 
+.sm-select{
+	width: 20%;
+	padding: 10px;
+	font-size: 20px;
+	/*rounded search bar*/
+	border-radius: 50px;
+	-webkit-border-radius: 50px;	/*for chrome & safari*/
+	-moz-border-radius: 50px;	/*for firefox*/
+	/*bottom color of the search bar*/
+	border-bottom-color: blue;
+	-moz-border-bottom-color: blue;
+}
+
 .search{
-	width: 80%;
+	width: 60%;
 	padding: 10px;
 	font-size: 20px;
 	/*rounded search bar*/

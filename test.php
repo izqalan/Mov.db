@@ -5,7 +5,6 @@
 	<title></title>
 </head>
 <body>
-
 	<form method="post" action="test1.php">
 		ali <input type="text" name="search">
 		<input type="submit" name="sub">

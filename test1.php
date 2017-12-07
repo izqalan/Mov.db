@@ -1,3 +1,4 @@
 <?php
-	echo($_POST['search'])
+    include 'connection.php';
+    echo($_POST['search'])
 ?>

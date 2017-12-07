@@ -9,25 +9,30 @@
 </head>
 <body>
 	<div class="navbar">
-		<a href="index.php">
+		<a href="index.html">
 			<img src="src/logow.png" height="30px" alt="mov.db logo" width="100px" >
 		</a>
-		<ul >
+            
+		<ul>
 			<li><a href="index.html">Home</a></li>
 			<li><a href="list.html">Lists</a></li>
 			<li><a href="about.html">About us</a></li>
+			<li><a href="login.html">Login/Sign Up</a></li>
 		</ul>
 	</div>
 	<!-- content -->
-	<!-- sometimes the button not working-->
 	<form class="animated zoomIn big-search" id="searchForm" method="post" action="find.php">
-		<input class="search" id="searchText" type="text" name="search" placeholder="search database" required />
+		<input class="search" id="searchText" type="text" name="search" placeholder="search database" />
+		<select id="select" name="select" class="sm-select">
+			<option value="name">Name</option>
+			<option value="lang">Language</option>
+			<option value="rate">Rating</option>
+			<option value="genre">Genre</option>
+			<option value="studio">Studio</option>
+			<option value="director">Director</option>
+		</select>
 		<input class="submit" type="submit" name="submit" value="search"/>
 	</form>
-	
-	<!-- and footer dissapeared -->
-	<!-- kill me -->
-	
 	
 	<!-- end content -->
 	<footer class="footer">
