@@ -3,12 +3,13 @@
 # mov.db
 Mov.db is a film database.
 <h2>Notes</h2>
-index.php will only run whe the wamp server is up
+<a href="https://docs.google.com/spreadsheets/d/1rpa5IFIgN-QGYvvBqMCMRwjlslYvt6cs9BjT8GDqTEA/edit?usp=sharing"> <em>Database</em></a>
 <h2>Planned features</h2>
 <ul>
   <li>Login</li>
-  <li>Admin permission</li>
-  <ul><li>Edit/Delete movies details</li></ul>
+  <li>Admin & User permission</li>
+  <ul><li>Admin - Edit/Delete movies details</li></ul>
+  <ul><li>User - search
   <li>Search engine</li>
   <li>About page <i>(Optional)</i></li>
   <li>Lists of films page <i>(Optional)</i></li>
