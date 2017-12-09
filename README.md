@@ -11,6 +11,7 @@ Mov.db is a film database.
   <ul><li>Admin - Edit/Delete movies details</li></ul>
   <ul><li>User - search</li></ul>
   <li>Search engine</li>
+  <ul><li>Cool Output design</li><ul>
   <li>About page <i>(Optional)</i></li>
   <li>Lists of films page <i>(Optional)</i></li>
 </ul>
