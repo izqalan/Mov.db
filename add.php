@@ -24,12 +24,13 @@
 
 	<div class="content">
 		<h1>Online Film Registration</h1><br><br>
-			<form action="add.php">
-				<input class="sm-form" size="" type="text" name="MovName" placeholder="Title">
+			<form action="add.php" method="post">
+				<!--<input class="sm-form" type="text" name="MovID" placeholder="Movie ID">-->
+				<input class="sm-form" type="text" name="MovName" placeholder="Title">
 				<input class="sm-form" type="text" name="MovLang" placeholder="Language"><br><br>
 				<input class="sm-form" type="text" name="MovRating" placeholder="Movie Rating">
 				<input class="sm-form" type="text" name="MovGenre" placeholder="Genre"><br><br>
-				<input class="sm-form" type="text" name="MovDuration" placeholder="Duration">
+				<input class="sm-form" type="number" name="MovDuration" placeholder="Duration">
 				<input class="sm-form" type="date" name="MovDate" placeholder="Date released"><br><br>
 				<input class="sm-form" type="text" name="MovStudio" placeholder="Studio">
 				<input class="sm-form" type="text" name="MovDirector" placeholder="Director"><br><br>
@@ -50,36 +51,38 @@
 		$MovStudio = @$_POST['MovStudio'];
 		$MovDirector = @$_POST['MovDirector'];
 
-		$querycheck = "SELECT * FROM movies where MovID = '".$MovID."'";
-		$resultCheck = mysqli_query($con, $querycheck);
+		$check = "SELECT * FROM movies WHERE MovID = '".$MovID."'";
+		$resultCheck = mysqli_query($con, $check);
 		if(!$resultCheck)
 		{
-			die(mysqli_error($con));
+			die(mysqli_connect_error($con));
 		}
 		else
 		{
+			
 			if(mysqli_num_rows($resultCheck) == 0)
 			{
-				$query = "INSERT INTO movies VALUES(0,'".$MovName."', '".$MovLang."', '".$MovRating."','".$MovGenre."','".$MovDuration."','".$MovDate."','".$MovStudio."','".$MovDirector."')";
-
+				
+				$query = "INSERT INTO Movies VALUES('".$MovID."','".$MovName."', '".$MovLang."', '".$MovRating."','".$MovGenre."','".$MovDuration."','".$MovDate."','".$MovStudio."','".$MovDirector."')";
+				
 				$resultInsert = mysqli_query($con, $query);
-
+				
 				if(!$resultInsert)
 				{
+					echo "babi";
 					die(mysqli_error($con));
 				}
 				else
 				{
+					
 					echo"Record has been added";
 				}
-			}else
+			}
+			else
 			{
 				echo "Record already existed";
 			}
 		}
-		
-
-
 	?>
 	<!-- end content-->
 	<footer class="footer">
