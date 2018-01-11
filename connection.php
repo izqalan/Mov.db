@@ -5,5 +5,4 @@
 	{
 		die(mysqli_error());
 	}
-
 ?>

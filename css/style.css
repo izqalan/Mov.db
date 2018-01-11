@@ -46,7 +46,7 @@ body{
 	text-align: center;
 }
 .footer {
-	position: absolute;
+	position: fixed;
 	right: 0;
 	bottom: 0;
 	left: 0;
@@ -70,6 +70,19 @@ body{
 	width: 20%;
 	padding: 10px;
 	font-size: 20px;
+	/*rounded search bar*/
+	border-radius: 50px;
+	-webkit-border-radius: 50px;	/*for chrome & safari*/
+	-moz-border-radius: 50px;	/*for firefox*/
+	/*bottom color of the search bar*/
+	border-bottom-color: blue;
+	-moz-border-bottom-color: blue;
+}
+
+.sm-form{
+	width: 20%;
+	padding: 5px;
+	font-size: 15px;
 	/*rounded search bar*/
 	border-radius: 50px;
 	-webkit-border-radius: 50px;	/*for chrome & safari*/

@@ -50,7 +50,7 @@
 		while ($row = mysqli_fetch_array($query, MYSQLI_ASSOC)) {
 
 			# This is not the final output design
-			echo("<center><table border='1'>");
+			echo("<center><table border='2'>");
 
 			echo "<tr><th>Movie ID</th><th>Movie Name</th><th>Language</th>";
 			echo "<th>Rating</th></tr>";
