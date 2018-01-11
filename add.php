@@ -69,12 +69,12 @@
 				
 				if(!$resultInsert)
 				{
-					echo "babi";
+					
 					die(mysqli_error($con));
 				}
 				else
 				{
-					
+
 					echo"Record has been added";
 				}
 			}

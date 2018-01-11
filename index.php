@@ -8,6 +8,13 @@
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
 </head>
 <body>
+	<?php
+		session_start();
+		if(isset($_SESSION['UID']))
+		{
+
+
+	?>
 	<div class="navbar">
 		<a href="index.html">
 			<img src="src/logow.png" height="30px" alt="mov.db logo" width="100px" >
@@ -16,10 +23,30 @@
 		<ul>
 			<li><a href="index.html">Home</a></li>
 			<li><a href="list.html">Lists</a></li>
-			<li><a href="about.html">About us</a></li>
-			<li><a href="login.html">Login/Sign Up</a></li>
+			<li><a href="logout.php">Logout</a></li>
+		</ul>
+
+	</div>
+	<marquee behavior="scroll" direction="left"><h3> WELCOME, Mov.db <?php echo $_SESSION["UID"];?> </h3></marquee>
+	<?php
+		}
+		else
+		{
+	?>
+	<div class="navbar">
+		<a href="index.html">
+			<img src="src/logow.png" height="30px" alt="mov.db logo" width="100px" >
+		</a>
+            
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="list.html">Lists</a></li>
+			<li><a href="login.html">Login</a></li>
 		</ul>
 	</div>
+	<?php
+		}
+	?>
 	<!-- content -->
 	<form class="animated zoomIn big-search" id="searchForm" method="post" action="find.php">
 		<input class="search" id="searchText" type="text" name="search" placeholder="search database" />

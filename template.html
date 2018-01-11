@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<!-- Copy paste this template into a new file -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 	<title>Mov.db</title>
@@ -9,26 +8,51 @@
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
 </head>
 <body>
+	<?php
+		session_start();
+		if(isset($_SESSION['UID']))
+		{
+
+
+	?>
 	<div class="navbar">
 		<a href="index.html">
 			<img src="src/logow.png" height="30px" alt="mov.db logo" width="100px" >
 		</a>
+            
 		<ul>
-			<li><a href="index.php">Home</a></li>
+			<li><a href="index.html">Home</a></li>
 			<li><a href="list.html">Lists</a></li>
-			<li><a href="about.html">About us</a></li>
-			<li><a href="login.php">Login/Sign up</a></li>
+			<li><a href="logout.php">Logout</a></li>
+		</ul>
+
+	</div>
+	<marquee behavior="scroll" direction="left"><h3> WELCOME, Mov.db <?php echo $_SESSION["UID"];?> </h3></marquee>
+	<?php
+		}
+		else
+		{
+	?>
+	<div class="navbar">
+		<a href="index.html">
+			<img src="src/logow.png" height="30px" alt="mov.db logo" width="100px" >
+		</a>
+            
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="list.html">Lists</a></li>
+			<li><a href="login.html">Login</a></li>
 		</ul>
 	</div>
+	<?php
+		}
+	?>
 	<!-- content -->
-
-
-
-	<!-- end content-->
+	
+	<!-- end content -->
 	<footer class="footer">
 		<p style="font-size: 8pt;"><i>© 2017 Izqalan, Nu'man, Yew CS, Wan .E SOME RIGHT RESERVED<i></p>
 	</footer>
 	
-
 </body>
 </html>

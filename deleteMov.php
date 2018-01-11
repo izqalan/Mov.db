@@ -16,10 +16,11 @@ if(!$resultDelete) //to check if query result IS NOT
 else
 {	//query result is OK
 	echo "Record has been deleted ";
+	header("location:menu1.php")
 }
 
 ?>
 <br><br>
-Click <a href = "adminPage.php"> View Admin Page </a></br>
+Click <a href = "index.html"> View Admin Page </a></br>
 </body>
 </html>
