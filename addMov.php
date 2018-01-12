@@ -15,7 +15,7 @@
 		$resultCheck = mysqli_query($con, $check);
 		if(!$resultCheck)
 		{
-			die(mysqli_error($con));
+			die(mysqli_connect_error($con));
 		}
 		else
 		{
@@ -23,27 +23,26 @@
 			if(mysqli_num_rows($resultCheck) == 0)
 			{
 				
-				$query = "INSERT INTO Movies VALUES('".$MovID."','".$MovName."', '".$MovLang."', '".$MovRating."','".$MovGenre."','".$MovDuration."','".$MovDate."','".$MovStudio."','".$MovDirector."')";
+				$query = "INSERT INTO Movies VALUES('".$MovID."', '".$MovName."', '".$MovLang."', '".$MovRating."','".$MovGenre."','".$MovDuration."','".$MovDate."','".$MovStudio."','".$MovDirector."')";
 				
 				$resultInsert = mysqli_query($con, $query);
 				
 				if(!$resultInsert)
 				{
 					
-					die(mysqli_connect_error($con));
+					die(mysqli_error($con));
 				}
 				else
 				{
 
 					echo"Record has been added";
+					sleep(2);
+					header("location: add.php");
 				}
 			}
 			else
 			{
-				echo "Record already existed";
+				echo "Record already exists";
 			}
 		}
-		
-
-
 	?>
