@@ -3,6 +3,7 @@
 <head>
 <title>Mov.db LOGIN FORM</title>
 <link rel="stylesheet" type="text/css" href="loginstyle.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body id="body_bg">
 <div <div align="center">
@@ -22,26 +23,21 @@
 
 
     <form id="login-form" method="post" action="loginprocess.php" >
-        <table border="0.5" >
+       
 		
-            <tr>
-                <td><label for="user_id"><b><font face="arial">User Name</font></b></label></td>
-                <td><input type="text" name="userID" id="userID" placeholder="Enter Username"></td>
-            </tr>
-            <tr>
-                <td><label for="user_pass"><b><font face="arial">Password</font></b></label></td>
-                <td><input type="password" name="userPwd" id="userPwd" placeholder="Enter Password"></input></td>
-            </tr>
-			
-            <tr>
+            
+                
+            <input class="sm-form" style="width: 30%;" type="text" name="userID" id="userID" placeholder="Username">     
+            <input class="sm-form" style="width: 30%;" type="password" name="userPwd" id="userPwd" placeholder="Password"></input>
+            
+			<br><br>
+            
 				
-                <td><input type="submit" value="Submit" />
-                <td><input type="reset" value="Reset"/>
+            <input class="submit" style="width: 30%;" type="submit" value="Submit" />
+            <input class="submit" style="width: 30%;" type="reset" value="Reset"/>
 				
-            </tr>
-			
-        </table>
+        
     </form>
-		</div>
+</div>
 </body>
 </html>
