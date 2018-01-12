@@ -21,6 +21,7 @@
 		</a>
             
 		<ul>
+			<li><a href="add.php">Add film</a></li>
 			<li><a href="index.html">Home</a></li>
 			<li><a href="list.html">Lists</a></li>
 			<li><a href="logout.php">Logout</a></li>

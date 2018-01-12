@@ -1,3 +1,10 @@
+<?php 
+	session_start();
+	if(isset($_SESSION['UID']))
+	{
+		
+ ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,8 +23,7 @@
 		<ul>
 			<li><a href="index.php">Home</a></li>
 			<li><a href="list.html">Lists</a></li>
-			<li><a href="about.html">About us</a></li>
-			<li><a href="login.php">Login/Sign up</a></li>
+			<li><a href="logout.php">logout</a></li>
 		</ul>
 	</div>
 	<!-- content -->
@@ -92,3 +98,4 @@
 
 </body>
 </html>
+<?php }else{ echo "PERMISSION DENINED";} ?>
