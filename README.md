@@ -9,11 +9,11 @@ Mov.db is a film database.
   <li>Login</li>
   <li>Admin & User permission</li>
   <ul><li>Admin - Edit/Delete movies details</li></ul>
-  <ul><li>User - search</li></ul>
+  <ul><li><strike>Add film details</strike></li></ul>
+  <ul><li><strike>User - search</strike></li></ul>
   <li><strike>Search engine</strike></li>
   <ul><li>Cool Output design</li></ul>
   <li>Lists of films page</li>
-  <li>About page <i>(Optional)</i></li>
   
 </ul>
 <h2>Softwares used</h2>
