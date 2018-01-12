@@ -16,14 +16,14 @@
 
 	?>
 	<div class="navbar">
-		<a href="index.html">
+		<a href="index.php">
 			<img src="src/logow.png" height="30px" alt="mov.db logo" width="100px" >
 		</a>
             
 		<ul>
 			<li><a href="add.php">Add film</a></li>
 			<li><a href="index.html">Home</a></li>
-			<li><a href="list.html">Lists</a></li>
+			<li><a href="chooseRecord.php">Lists</a></li>
 			<li><a href="logout.php">Logout</a></li>
 		</ul>
 
@@ -35,13 +35,12 @@
 		{
 	?>
 	<div class="navbar">
-		<a href="index.html">
+		<a href="index.php">
 			<img src="src/logow.png" height="30px" alt="mov.db logo" width="100px" >
 		</a>
             
 		<ul>
 			<li><a href="index.html">Home</a></li>
-			<li><a href="list.html">Lists</a></li>
 			<li><a href="login.html">Login</a></li>
 		</ul>
 	</div>

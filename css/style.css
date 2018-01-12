@@ -1,6 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	
 }
 
 body{
@@ -22,7 +23,7 @@ body{
 	float: left;
 	padding-top: 0;
 }
-.navbar li {
+.navbar ul li {
 	display: inline-block;
 	padding-right: 20px;
 }
@@ -38,8 +39,7 @@ body{
 
 .container{
 	display: grid;
-	grid-template-areas: 
-	". content ."
+	grid-template-areas: ". content ."
 }
 .content{
 	grid-area: content;
@@ -119,4 +119,12 @@ body{
 
 .submit:hover{
 	color: #c1c1c1;
+}
+.table{
+	margin: 0 0 40px 0;
+  	width: 100%;
+  	box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  	display: table;
+  	@media screen and (max-width: 580px);
+    display: block;
 }
