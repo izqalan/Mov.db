@@ -69,7 +69,7 @@
 			if(mysqli_num_rows($resultCheck) == 0)
 			{
 				
-				$query = "INSERT INTO Movies VALUES('".$MovID."','".$MovName."', '".$MovLang."', '".$MovRating."','".$MovGenre."','".$MovDuration."','".$MovDate."','".$MovStudio."','".$MovDirector."')";
+				$query = "INSERT INTO Movies VALUES('".$MovID[1]."','".$MovName."', '".$MovLang."', '".$MovRating."','".$MovGenre."','".$MovDuration[0]."','".$MovDate."','".$MovStudio."','".$MovDirector."')";
 				
 				$resultInsert = mysqli_query($con, $query);
 				
