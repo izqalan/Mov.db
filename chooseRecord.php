@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+<center>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Mov.db</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="table.css">
 </head>
 <body>
 	<?php
@@ -19,7 +21,7 @@
 		<a href="index.php">
 			<img src="src/logow.png" height="30px" alt="mov.db logo" width="100px" >
 		</a>
-            
+
 		<ul>
 			<li><a href="index.php">Home</a></li>
 			<li><a href="list.php">Lists</a></li>
@@ -41,18 +43,22 @@
 	die ("Invalid Query 1: ".mysqli_error($con));
 	}
 	else
-	{	
+	{
 ?>
-<form name ="editForm" action="deleteMov.php" method="POST">
+<form name ="editForm" action="deleteMov.php" method="post">
+	<input class="submit delete" type ="submit" value = "Delete" onclick="return confirm('Are you sure you want to delete this record?')":>
+	<br><br>
 <table>
+
 
 <tr><th>Choose</th><th>MovID</th><th> MovName </th><th> MoveLang </th><th> MovRating</th><th>MovGenre</th><th>MovDuration</th><th>MovDate</th><th>MovStudio</th><th>MovDirector</th></tr>
 <?php
 
 while($row = mysqli_fetch_array($resultGet,MYSQLI_BOTH)) {
 ?>
+
 	<tr>
-		<td><input type="radio" name="MovID" value="<?php echo $row ['MovID']; ?>"></td>
+		<td><input type="radio" name="MovID" value="<?php echo $row['MovID'];?>"</td>
 		<td><?php echo $row['MovID'];?></td>
 		<td><?php echo $row['MovName'];?></td>
 		<td><?php echo $row['MovLang'];?></td>
@@ -62,13 +68,12 @@ while($row = mysqli_fetch_array($resultGet,MYSQLI_BOTH)) {
 		<td><?php echo $row['MovDate'];?></td>
 		<td><?php echo $row['MovStudio'];?></td>
 		<td><?php echo $row['MovDirector'];?></td>
-
+</td>
 	</tr>
-	
+
 	<?php } ?>
 	</table>
 	<br>
-	<input type ="submit" value = "Delete Record" onclick="return confirm('Are you sure you want to delete this record?')":>
 </form>
 <?php
 }
@@ -83,7 +88,7 @@ while($row = mysqli_fetch_array($resultGet,MYSQLI_BOTH)) {
 		<a href="index.php">
 			<img src="src/logow.png" height="30px" alt="mov.db logo" width="100px" >
 		</a>
-            
+
 		<ul>
 			<li><a href="index.html">Home</a></li>
 			<li><a href="list.html">Lists</a></li>
@@ -94,12 +99,13 @@ while($row = mysqli_fetch_array($resultGet,MYSQLI_BOTH)) {
 		}
 	?>
 	<!-- content -->
-	
+
 
 	<!-- end content -->
 	<footer class="footer">
 		<p style="font-size: 8pt;"><i>© 2017 Izqalan, Nu'man, Yew CS, Wan .E SOME RIGHT RESERVED<i></p>
 	</footer>
-	
+
+</center>
 </body>
 </html>

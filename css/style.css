@@ -1,7 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
-	
+
 }
 
 body{
@@ -116,7 +116,21 @@ body{
 	-webkit-border-radius: 50px;	/*for chrome & safari*/
 	-moz-border-radius: 50px;	/*for firefox*/
 }
-
+.delete{
+	background-color: #e25248;
+}
+.delete:hover{
+	background-color: #ad554f;
+	cursor: pointer;
+}
+.edit{
+	background-color: #115dc1;
+	cursor: pointer;
+	color: #fff;
+}
+.edit:hover{
+	background-color: #417dcc;
+}
 .submit:hover{
 	color: #c1c1c1;
 }
