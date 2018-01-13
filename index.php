@@ -21,8 +21,8 @@
 		</a>
             
 		<ul>
-			<li><a href="add.php">Add film</a></li>
-			<li><a href="index.html">Home</a></li>
+			<li><a href="profile.php"><?php echo $_SESSION["UID"]; ?></a></li>
+			<li><a href="index.php">Home</a></li>
 			<li><a href="chooseRecord.php">Lists</a></li>
 			<li><a href="logout.php">Logout</a></li>
 		</ul>
@@ -40,7 +40,7 @@
 		</a>
             
 		<ul>
-			<li><a href="index.html">Home</a></li>
+			<li><a href="index.php">Home</a></li>
 			<li><a href="login.html">Login</a></li>
 		</ul>
 	</div>

@@ -21,6 +21,7 @@
 			<img src="src/logow.png" height="30px" alt="mov.db logo" width="100px" >
 		</a>
 		<ul>
+			<li><a href="profile.php"><?php echo $_SESSION["UID"]; ?></a></li>
 			<li><a href="index.php">Home</a></li>
 			<li><a href="list.html">Lists</a></li>
 			<li><a href="logout.php">logout</a></li>
@@ -40,7 +41,7 @@
 				<input class="sm-form" type="date" name="MovDate" placeholder="Date released"><br><br>
 				<input class="sm-form" type="text" name="MovStudio" placeholder="Studio">
 				<input class="sm-form" type="text" name="MovDirector" placeholder="Director"><br><br>
-				<input class="submit" type="submit" value="store Into DB">
+				<input class="submit edit" type="submit" value="store Into DB">
 			</form>
 	</div>
 	<!-- end content-->

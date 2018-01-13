@@ -9,6 +9,7 @@
 </head>
 <body>
 	<?php
+		include('connection.php');
 		session_start();
 		if(isset($_SESSION['UID']))
 		{
@@ -20,31 +21,38 @@
 			<img src="src/logow.png" height="30px" alt="mov.db logo" width="100px" >
 		</a>
 		<ul>
+			<li><a href="admin.php"><?php echo $_SESSION["UID"]; ?></a></li>
 			<li><a href="index.php">Home</a></li>
 			<li><a href="list.html">Lists</a></li>
 			<li><a href="logout.php">Logout</a></li>
 		</ul>
 	</div>
-
-<div id="left-sidenav" class="sidenav">
-
-	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;<!--multiplication code--></a>
-	<a href="chooseRecord.php">Delete record</a>
-	<a href="chooseEdit.php">Edit record</a>
-	<a href="add.php">Add record</a>
-	
-</div>
-<br><br>
-<div class="rotate" id="rotate-bar">
-	<span onclick="openNav()"">&#9776;<!--burger icon--> </span>
-	<span onclick="openNav()"> System </span>
-</div>
-
-
+<center><h2><a href="chooseEdit.php" style=" text-decoration: none;">Go back</a></h2></center>
 	<?php
+			include('connection.php');
+			$MovID = @$_POST['MovID'];
+			$MovName = @$_POST['MovName'];
+			$MovLang = @$_POST['MovLang'];
+			$MovRating = @$_POST['MovRating'];
+			$MovGenre = @$_POST['MovGenre'];
+			$MovDuration = @$_POST['MovDuration'];
+			$MovDate = @$_POST['MovDate'];
+			$MovStudio = @$_POST['MovStudio'];
+			$MovDirector = @$_POST['MovDirector'];
+
+		$queryset = "UPDATE movies set MovName = '".$MovName."', MovLang = '".$MovLang."', MovRating = '".$MovRating."', MovGenre = '".$MovGenre."', MovDuration = '".$MovDuration."', MovDate = '".$MovDate."', MovStudio = '".$MovStudio."', MovDirector = '".$MovDirector."' where MovID = '".$MovID."'";
+
+		$resultGet = mysqli_query($con, $queryset);
+			if(!$resultGet)
+			{
+				die("Invalid Query ".mysqli_error($con));
+			}
+			else
+			{
+				echo "Record has been updated";
+			}
 		}
-		else
-		{
+		else{
 	?>
 	<div class="navbar">
 		<a href="index.html">
@@ -64,15 +72,7 @@
 	<!-- content -->
 	
 	<!-- end content -->
-	<script>
-		function openNav() {
-    		document.getElementById("left-sidenav").style.width = "15%";
-		}
-
-		function closeNav() {
-    		document.getElementById("left-sidenav").style.width = "0";
-		}
-	</script>
+	
 	<footer class="footer">
 		<p style="font-size: 8pt;"><i>© 2017 Izqalan, Nu'man, Yew CS, Wan .E SOME RIGHT RESERVED<i></p>
 	</footer>

@@ -16,7 +16,8 @@
 session_start();
 if (isset ($_SESSION["UID"]))
 {
-	session_destroy();?>
+	session_destroy();
+	 ?>
 	
 	<h2><center>You have successfully logged out.</h2>
 	<h3><center>Go back to <a href="index.php">main page</a></center><h3>

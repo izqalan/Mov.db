@@ -10,20 +10,44 @@
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
 </head>
 <body>
+	<?php
+		session_start();
+		if(isset($_SESSION['UID']))
+		{
+
+	?>
 	<div class="navbar">
 		<a href="index.html">
 			<img src="src/logow.png" height="30px" alt="mov.db logo" width="100px" >
 		</a>
 		<ul>
+			<li><a href="profile.php"><?php echo $_SESSION["UID"]; ?></a></li>
 			<li><a href="index.php">Home</a></li>
 			<li><a href="list.html">Lists</a></li>
-			<li><a href="about.html">About us</a></li>
-			<li><a href="login.html">Login/Sign up</a></li>
+			<li><a href="logout.php">Logout</a></li>
+		</ul>
+	</div>
+	<?php
+		}
+		else{
+
+	?>
+
+	<div class="navbar">
+		<a href="index.html">
+			<img src="src/logow.png" height="30px" alt="mov.db logo" width="100px" >
+		</a>
+		<ul>
+			
+			<li><a href="index.php">Home</a></li>
+			<li><a href="list.html">Lists</a></li>
+			<li><a href="login.html">Login</a></li>
 		</ul>
 	</div>
 	<!-- content -->
 
 	<?php
+}
 	include('connection.php');
 	if(isset($_POST['search'])){
 		$searchq = $_POST['search'];

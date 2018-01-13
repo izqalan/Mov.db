@@ -142,3 +142,49 @@ body{
   	@media screen and (max-width: 580px);
     display: block;
 }
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: .3s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    
+}
+#body_bg
+{ 
+background-color:#303133; 
+}
+
+#login-form{ 
+
+background:#ffe207; 
+border: 3 px solid #eeeee; 
+padding:5%;
+width:30%;
+border-radius:5px; 
+ 
+}

@@ -2,14 +2,16 @@
 <html>
 <head>
   <?php
-  include('connection.php');
-  $MovID = @$_POST['MovID'];
-  $queryGet = "SELECT * FROM Movies WHERE MovID = '".$MovID."'";
-  $resultGet = mysqli_query($con, $queryGet);
-  if(is_null($MovID))
-  {
-    header("location: chooseEdit.php");
-  }
+  	include('connection.php');
+  	$MovID = @$_POST['MovID'];
+  	$queryGet = "SELECT * FROM Movies WHERE MovID = '".$MovID."'";
+  	$resultGet = mysqli_query($con, $queryGet);
+
+  	
+  	if(is_null($MovID))
+  	{
+    	header("location: chooseEdit.php");
+  	}
 
   	session_start();
   	if(isset($_SESSION['UID']))
@@ -41,9 +43,9 @@
     <?php while($row = mysqli_fetch_array($resultGet, MYSQLI_BOTH))
     {
       ?>
-			<form action="addMov.php" method="post">
+			<form action="saveEdit.php" method="post">
 
-
+          <input type="hidden" name="MovID" value="<?php echo $row['MovID'];?>">
   				<input class="sm-form" type="text" value="<?php echo $row['MovName'];?>" name="MovName" placeholder="Title" >
   				<input class="sm-form" type="text" value="<?php echo $row['MovLang'];?>"name="MovLang" placeholder="Language"><br><br>
   				<input class="sm-form" type="text" value="<?php echo $row['MovRating'];?>" name="MovRating" placeholder="Rating">
@@ -52,7 +54,7 @@
   				<input class="sm-form" type="date" value="<?php echo $row['MovDate'];?>" name="MovDate" placeholder="Date"><br><br>
   				<input class="sm-form" type="text" value="<?php echo $row['MovStudio'];?>" name="MovStudio" placeholder="Studio">
   				<input class="sm-form" type="text" value="<?php echo $row['MovDirector'];?>" name="MovDirector" placeholder="Director"><br><br>
-  				<input class="submit" type="submit" value="store Into DB">
+  				<input class="submit edit" type="submit" value="store Into DB">
 
 			</form>
       <?PHP } ?>

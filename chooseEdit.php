@@ -22,6 +22,7 @@
 		</a>
 
 		<ul>
+			<li><a href="admin.php"><?php echo $_SESSION["UID"]; ?></a></li>
 			<li><a href="index.php">Home</a></li>
 			<li><a href="list.php">Lists</a></li>
 			<li><a href="logout.php">Logout</a></li>
@@ -43,6 +44,8 @@
 	}
 	else
 	{
+		$queryGet = "select * from movies";
+		$resultGet = mysqli_query($con, $queryGet);
 ?>
 <form name ="editForm" action="edit.php" method="post">
 
@@ -58,7 +61,7 @@ while($row = mysqli_fetch_array($resultGet,MYSQLI_BOTH)) {
 ?>
 
 	<tr>
-		<td><input type="radio" name="MovID" value="<?php echo $row['MovID'];?>"</td>
+		<td><input type="radio" name="MovID" value="<?php echo $row['MovID'];?>"></td>
 		<td><?php echo $row['MovID'];?></td>
 		<td><?php echo $row['MovName'];?></td>
 		<td><?php echo $row['MovLang'];?></td>
@@ -68,7 +71,6 @@ while($row = mysqli_fetch_array($resultGet,MYSQLI_BOTH)) {
 		<td><?php echo $row['MovDate'];?></td>
 		<td><?php echo $row['MovStudio'];?></td>
 		<td><?php echo $row['MovDirector'];?></td>
-</td>
 	</tr>
 
 	<?php } ?>
