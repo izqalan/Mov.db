@@ -6,14 +6,14 @@ Mov.db is a film database.
 <a href="https://docs.google.com/spreadsheets/d/1rpa5IFIgN-QGYvvBqMCMRwjlslYvt6cs9BjT8GDqTEA/edit?usp=sharing"> <em>Database</em></a>
 <h2>Planned features</h2>
 <ul>
-  <li>Login</li>
-  <li>Admin & User permission</li>
-  <ul><li>Admin - Edit/Delete movies details</li></ul>
+  <li><strike>Login</strike></li>
+  <li><strike>Admin & User permission</strike></li>
+  <ul><li><strike>Admin - Edit/Delete movies details</strike></li></ul>
   <ul><li><strike>Add film details</strike></li></ul>
   <ul><li><strike>User - search</strike></li></ul>
   <li><strike>Search engine</strike></li>
-  <ul><li>Cool Output design</li></ul>
-  <li>Lists of films page</li>
+  <ul><li><strike>Cool Output design</strike></li></ul>
+  <li><strike>Lists of films page</strike></li>
   
 </ul>
 <h2>Softwares used</h2>
