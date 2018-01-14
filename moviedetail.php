@@ -26,7 +26,7 @@
 	<?php
 	include('connection.php');
 
-	echo $detail=$_POST['detail'];
+	echo $detail=@$_POST['detail'];
 	$MovID = @$_POST['MovID'];
 	$MovName = @$_POST['MovName'];
 	$MovLang = @$_POST['MovLang'];

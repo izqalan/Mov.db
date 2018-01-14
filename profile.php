@@ -6,6 +6,7 @@
 	<title>Mov.db</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
+
 </head>
 <body>
 	<?php
@@ -21,7 +22,7 @@
 		</a>
 		<ul>
 			<li><a href="index.php">Home</a></li>
-			<li><a href="list.html">Lists</a></li>
+			<li><a href="list.php">Lists</a></li>
 			<li><a href="logout.php">Logout</a></li>
 		</ul>
 	</div>
@@ -38,9 +39,56 @@
 <div class="vertical" id="rotate-bar"> <!-- passs id to js to open the sidebar-->
 	<span class="animated fadeInLeft" onclick="openNav()">&#9776;<!--burger icon-->Database Access </span>
 </div>
-
-
+	
+	<!-- start here -->
 	<?php
+	include('connection.php');
+	$queryGet = "select * from movies";
+	$resultGet = mysqli_query($con, $queryGet);
+
+
+	if(!$resultGet)
+	{
+	die ("Invalid Query 1: ".mysqli_error($con));
+	}
+	else
+	{
+		$queryGet = "select * from movies";
+		$resultGet = mysqli_query($con, $queryGet);
+?>
+<center>
+<form>
+	
+<table>
+
+
+<tr><th>MovID</th><th> MovName </th><th> MoveLang </th><th> MovRating</th><th>MovGenre</th><th>MovDuration</th><th>MovDate</th><th>MovStudio</th><th>MovDirector</th></tr>
+<?php
+
+while($row = mysqli_fetch_array($resultGet,MYSQLI_BOTH)) {
+?>
+
+	<tr>
+		
+		<td><?php echo $row['MovID'];?></td>
+		<td><?php echo $row['MovName'];?></td>
+		<td><?php echo $row['MovLang'];?></td>
+		<td><?php echo $row['MovRating'];?></td>
+		<td><?php echo $row['MovGenre'];?></td>
+		<td><?php echo $row['MovDuration'];?></td>
+		<td><?php echo $row['MovDate'];?></td>
+		<td><?php echo $row['MovStudio'];?></td>
+		<td><?php echo $row['MovDirector'];?></td>
+		
+	</tr>
+
+	<?php } ?>
+	</table>
+	<br>
+</form>
+</center>
+	<?php
+		}
 		}
 		else
 		{

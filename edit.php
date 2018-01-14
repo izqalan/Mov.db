@@ -47,13 +47,14 @@
 
           <input type="hidden" name="MovID" value="<?php echo $row['MovID'];?>">
   				<input class="sm-form" type="text" value="<?php echo $row['MovName'];?>" name="MovName" placeholder="Title" >
-  				<input class="sm-form" type="text" value="<?php echo $row['MovLang'];?>"name="MovLang" placeholder="Language"><br><br>
+  				<input class="sm-form" type="text" value="<?php echo $row['MovLang'];?>" name="MovLang" placeholder="Language"><br><br>
   				<input class="sm-form" type="text" value="<?php echo $row['MovRating'];?>" name="MovRating" placeholder="Rating">
   				<input class="sm-form" type="text" value="<?php echo $row['MovGenre'];?>" name="MovGenre" placeholder="Genre"><br><br>
   				<input class="sm-form" type="number" value="<?php echo $row['MovDuration'];?>" name="MovDuration" placeholder="Duration">
   				<input class="sm-form" type="date" value="<?php echo $row['MovDate'];?>" name="MovDate" placeholder="Date"><br><br>
   				<input class="sm-form" type="text" value="<?php echo $row['MovStudio'];?>" name="MovStudio" placeholder="Studio">
   				<input class="sm-form" type="text" value="<?php echo $row['MovDirector'];?>" name="MovDirector" placeholder="Director"><br><br>
+          <textarea class="sm-textarea" value="<?php echo $row['MovSynopsis'];?>" namme="MovSynopsis" placeholder="Synopsis"></textarea><br><br><br>
   				<input class="submit edit" type="submit" value="store Into DB">
 
 			</form>

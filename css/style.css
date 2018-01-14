@@ -78,7 +78,18 @@ body{
 	border-bottom-color: blue;
 	-moz-border-bottom-color: blue;
 }
-
+.sm-textarea{
+	width: 20%;
+	padding: 5px;
+	font-size: 15px;
+	/*rounded search bar*/
+	border-radius: 10px;
+	-webkit-border-radius: 10px;	/*for chrome & safari*/
+	-moz-border-radius: 10px;	/*for firefox*/
+	/*bottom color of the search bar*/
+	border-bottom-color: blue;
+	-moz-border-bottom-color: blue;
+}
 .sm-form{
 	width: 20%;
 	padding: 5px;
@@ -153,6 +164,7 @@ body{
     overflow-x: hidden;
     transition: .3s;
     padding-top: 60px;
+    z-index: 2;
 }
 
 .sidenav a {
@@ -191,7 +203,8 @@ border-radius:5px;
 }
 .vertical{
 	cursor: pointer;
-	z-index: -1;
+	z-index: 1;
+	position: fixed;
 	margin-left: 1.5%;
 	font-size: 24pt;
 	transform: rotate(90deg);
@@ -377,3 +390,26 @@ div.mor {
 	border-radius: 10px
 }
 
+table, td, th {
+    /*border: 1px solid #ddd;*/
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+}
+
+th, td {
+    background-color:#f2d100;
+    padding: 1%;
+
+}
+th{
+  background-color: #000;
+  color: #fff;
+  border-radius: 10px 10px 0 0;
+}
+form{
+	z-index: 0;
+}

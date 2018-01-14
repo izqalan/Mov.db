@@ -23,7 +23,7 @@
 		<ul>
 			<li><a href="profile.php"><?php echo $_SESSION["UID"]; ?></a></li>
 			<li><a href="index.php">Home</a></li>
-			<li><a href="chooseRecord.php">Lists</a></li>
+			<li><a href="list.php">Lists</a></li>
 			<li><a href="logout.php">Logout</a></li>
 		</ul>
 
@@ -41,7 +41,9 @@
             
 		<ul>
 			<li><a href="index.php">Home</a></li>
+			<li><a href="list.php">Lists</a></li>
 			<li><a href="login.html">Login</a></li>
+
 		</ul>
 	</div>
 	<?php
@@ -90,7 +92,6 @@
 	<div class= "poster5">
 		<a href="">
 			<img src="poster/5.jpg" width="200px" height="300px">
-
 		</a>
 	</div>
 	

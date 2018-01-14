@@ -10,6 +10,7 @@
 		$MovDate = @$_POST['MovDate'];
 		$MovStudio = @$_POST['MovStudio'];
 		$MovDirector = @$_POST['MovDirector'];
+		$MovSynopsis = @$_POST['MovSynopsis'];
 
 		$check = "SELECT * FROM movies WHERE MovID = '".$MovID."'";
 		$resultCheck = mysqli_query($con, $check);
@@ -23,7 +24,7 @@
 			if(mysqli_num_rows($resultCheck) == 0)
 			{
 				
-				$query = "INSERT INTO Movies VALUES('".$MovID."', '".$MovName."', '".$MovLang."', '".$MovRating."','".$MovGenre."','".$MovDuration."','".$MovDate."','".$MovStudio."','".$MovDirector."')";
+				$query = "INSERT INTO Movies VALUES('".$MovID."', '".$MovName."', '".$MovLang."', '".$MovRating."','".$MovGenre."','".$MovDuration."','".$MovDate."','".$MovStudio."','".$MovDirector."', '".$MovSynopsis."')";
 				
 				$resultInsert = mysqli_query($con, $query);
 				

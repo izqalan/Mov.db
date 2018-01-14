@@ -39,8 +39,9 @@
 			$MovDate = @$_POST['MovDate'];
 			$MovStudio = @$_POST['MovStudio'];
 			$MovDirector = @$_POST['MovDirector'];
+			$MovSynopsis = @$_POST['MovSynopsis'];
 
-		$queryset = "UPDATE movies set MovName = '".$MovName."', MovLang = '".$MovLang."', MovRating = '".$MovRating."', MovGenre = '".$MovGenre."', MovDuration = '".$MovDuration."', MovDate = '".$MovDate."', MovStudio = '".$MovStudio."', MovDirector = '".$MovDirector."' where MovID = '".$MovID."'";
+		$queryset = "UPDATE movies set MovName = '".$MovName."', MovLang = '".$MovLang."', MovRating = '".$MovRating."', MovGenre = '".$MovGenre."', MovDuration = '".$MovDuration."', MovDate = '".$MovDate."', MovStudio = '".$MovStudio."', MovDirector = '".$MovDirector."', MovSynopsis = '".$MovSynopsis."' where MovID = '".$MovID."'";
 
 		$resultGet = mysqli_query($con, $queryset);
 			if(!$resultGet)

@@ -40,7 +40,7 @@
 
 	if(!$resultGet)
 	{
-	die ("Invalid Query 1: ".mysqli_error($con));
+	die ("Invalid Query ".mysqli_error($con));
 	}
 	else
 	{
@@ -71,6 +71,7 @@ while($row = mysqli_fetch_array($resultGet,MYSQLI_BOTH)) {
 		<td><?php echo $row['MovDate'];?></td>
 		<td><?php echo $row['MovStudio'];?></td>
 		<td><?php echo $row['MovDirector'];?></td>
+
 	</tr>
 
 	<?php } ?>

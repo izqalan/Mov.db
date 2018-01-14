@@ -41,6 +41,7 @@
 				<input class="sm-form" type="date" name="MovDate" placeholder="Date released"><br><br>
 				<input class="sm-form" type="text" name="MovStudio" placeholder="Studio">
 				<input class="sm-form" type="text" name="MovDirector" placeholder="Director"><br><br>
+				<textarea class="sm-textarea" name="MovSynopsis" placeholder="Synopsis" ></textarea>
 				<input class="submit edit" type="submit" value="store Into DB">
 			</form>
 	</div>
