@@ -39,7 +39,7 @@
 	$query = mysqli_query($con, "SELECT * FROM movies WHERE MovID ='".$_POST['detail']."'") or die();
 	$row = mysqli_fetch_array($query, MYSQLI_ASSOC);
 	$poster="poster/".$row['MovID'].".jpg";
-	?>
+	?><table>
 			<td>
 				<div class="mid">
 					<?php echo "<img src='".$poster."' width='200px' height='300px'>";?>
@@ -56,16 +56,14 @@
 						<li>Genre: <?php echo $row['MovGenre'];?></li><br>
 					</ul>
 					<ol>
-						<li>Synopsis:<br><?php echo substr($row['MovSynopsis'], 0, 120);?>...</li>
+						<li>Synopsis:<br><?php echo ($row['MovSynopsis']);?></li>
 					</ol>
-					<div class="mor">
-						<form action="moviedetail.php" method="POST">
-						<input type="hidden" name="detail" value=<?php echo $row['MovID']?>>
-						<input type="submit" value="More Info..">
-						</form>
-					</div>
+					
 				</div>
 			</td>
+			<td><div class="next"></div></td>
+	</table>
+
 	
 </body>
 </html>
