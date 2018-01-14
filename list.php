@@ -67,7 +67,8 @@
 			<td>
 				<div class="mid">
 					<?php echo "<img src='".$poster."' width='200px' height='300px'>";?>
-				</div></td>
+				</div>
+			</td>
 			<td>
 				<div class="mname">
 					<p><?php echo $row['MovName'];?></p>

@@ -17,7 +17,7 @@
 		</a>
 		<ul>
 			<li><a href="index.php">Home</a></li>
-			<li><a href="list.html">Lists</a></li>
+			<li><a href="list.php">Lists</a></li>
 			<li><a href="login.php">Login</a></li>
 		</ul>
 	</div>
