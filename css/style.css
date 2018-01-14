@@ -139,7 +139,7 @@ body{
   	width: 100%;
   	box-shadow: 0 1px 3px rgba(0,0,0,0.2);
   	display: table;
-  	@media screen and (max-width: 580px);
+  	/* @media screen and (max-width: 580px); */
     display: block;
 }
 .sidenav {
@@ -187,4 +187,12 @@ padding:5%;
 width:30%;
 border-radius:5px; 
  
+}
+.vertical{
+	cursor: pointer;
+	z-index: -1;
+	margin-left: 2%;
+	font-size: 20pt;
+	transform: rotate(90deg);
+	transform-origin: 0;
 }

@@ -35,9 +35,9 @@
 	
 </div>
 <br><br>
-<div class="rotate" id="rotate-bar">
+<div class="vertical" id="rotate-bar">
 	<span onclick="openNav()"">&#9776;<!--burger icon--> </span>
-	<span onclick="openNav()"> System </span>
+	<span onclick="openNav()"> Database Access </span>
 </div>
 
 
