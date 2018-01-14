@@ -9,6 +9,9 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 	<link rel="stylesheet" type="text/css" href="css/animate.css"></style>
+	<style>
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+</style> 
 </head>
 <body>
 	<div class="navbar">

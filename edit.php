@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <style>
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+</style> 
   <?php
   	include('connection.php');
   	$MovID = @$_POST['MovID'];

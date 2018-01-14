@@ -7,7 +7,7 @@
 body{
 	height: 100%;
 	max-width: 100%;
-	font-family: 'helvetica', Arial;
+	font-family: 'Source Sans Pro', sans-serif, arial;
 	background-color: #ffe207;
 }
 .navbar{
@@ -310,6 +310,7 @@ div.mid {
 	height: 450px;
     border: 3px solid white;
 	border-radius: 5px
+	
 }
 	
 div.mname {
@@ -367,20 +368,21 @@ div.msyn {
     border: 1px solid gray;
 	background-color: #E6E6FA;
 	border-radius: 10px;
+
 }
 .msyn-MovDet ul li{
 	margin-top: 5px;
-	padding-left: 10px;
 	font-family: arial;
 	font-style: italic;
 	font-size: 12pt;
 	list-style:none;
+	padding: 0 0 0 30px;
 }
 
 .msyn-MovDet ol li{
 	margin-top: 5px;
-	padding-left: 10px;
-	font-size: 15px;
+	padding: 0 20px 20px 20px;
+	font-size: 19px;
 	text-overflow: ellipsis;
 	list-style:none;
 }

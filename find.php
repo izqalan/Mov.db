@@ -2,6 +2,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<style>
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+</style> 
 	<!-- Copy paste this template into a new file -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
