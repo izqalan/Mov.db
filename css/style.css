@@ -454,3 +454,14 @@ th{
 form{
 	z-index: 0;
 }
+
+.poster{/*boxes or frames for display of movie posters*/
+	
+	right:50px;
+	display: inline-block;
+    background-size: 100% 100%;
+    border-radius: 3px;
+	width: 220px;
+	height: 320px;
+	border: 5px solid white;
+}

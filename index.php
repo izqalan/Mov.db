@@ -69,31 +69,31 @@
 	</form>
 	
 	<div class = "poster1">
-		<a href="">
+		<a href="moviedetail1.php">
 			<img src="poster/1.jpg" width="200px" height="300px">
 		</a>
 	</div>
 	
 	<div class= "poster2">
-		<a href="">
+		<a href="moviedetail2.php">
 			<img src="poster/2.jpg" width="200px" height="300px">
 		</a>
 	</div>
 	
 	<div class= "poster3">
-		<a href="">
+		<a href="moviedetail3.php">
 			<img src="poster/3.jpg" width="200px" height="300px">
 		</a>
 	</div>
 	
 	<div class= "poster4">
-		<a href="">
+		<a href="moviedetail4.php">
 			<img src="poster/4.jpg" width="200px" height="300px">
 		</a>
 	</div>
 	
 	<div class= "poster5">
-		<a href="">
+		<a href="moviedetail5.php">
 			<img src="poster/5.jpg" width="200px" height="300px">
 		</a>
 	</div>
