@@ -115,6 +115,7 @@ body{
 	border-radius: 50px;
 	-webkit-border-radius: 50px;	/*for chrome & safari*/
 	-moz-border-radius: 50px;	/*for firefox*/
+	cursor: pointer;
 }
 .delete{
 	background-color: #e25248;
@@ -196,3 +197,183 @@ border-radius:5px;
 	transform: rotate(90deg);
 	transform-origin: 0;
 }
+
+.poster1{/*boxes or frames for display of movie posters*/
+	position:fixed;
+	top:320px;
+	left:120px;
+	right:;
+	bottom:;
+	width: 200px;
+	height: 300px;
+	border: 3px solid white;
+}
+
+.poster2{
+	position:fixed;
+	top:320px;
+	left:345px;
+	right:;
+	bottom:;
+	width: 200px;
+	height: 300px;
+	border: 3px solid white;
+}
+
+.poster3{
+	position:fixed;
+	top:320px;
+	left:570px;
+	right:;
+	bottom:;
+	width: 200px;
+	height: 300px;
+	border: 3px solid white;
+}
+
+.poster4{
+	position:fixed;
+	top:320px;
+	left:795px;
+	right:;
+	bottom:;
+	width: 200px;
+	height: 300px;
+	border: 3px solid white;
+}
+
+.poster5{
+	position:fixed;
+	top:320px;
+	left:1020px;
+	right:;
+	bottom:;
+	width: 200px;
+	height: 300px;
+	border: 3px solid white;
+}
+
+.poster{
+	position:fixed;
+	top:320px;
+	left:120px;
+	right:;
+	bottom:;
+	width: 100%;
+	height: 300px;
+	border: 3px solid black;
+}
+/*Box.css*/
+/*CSS div tag for find1.php to display records of movies*/
+div.main {
+	position:absolute;
+	top:300px;
+	left:50px;
+	right:0;
+	bottom:;
+    width: 1250px;
+	height: px;
+    border: 1px solid gray;
+}
+
+div.mid {
+	position:relative;
+	top:50px;
+	left:90px;
+	right:;
+	bottom:;
+    width: 200px;
+	height: 300px;
+    border: 3px solid white;
+	border-radius: 5px
+}
+	
+div.mname {
+	position:relative;
+	top:45px;
+	left:100px;
+	right:;
+	bottom:;
+    width: 350px;
+	height: 50px;
+    border: 1px solid gray;
+	background-color:#E6E6FA;
+	border-radius: 10px;
+}
+
+.mname p{
+	font-family: ;
+	font-size: 20px;
+	padding-top: 15px;
+	padding-left: 10px;
+}
+
+div.next {
+	position:relative;
+	top:50px;
+	left:px;
+	right:;
+	bottom:;
+    width: 30px;
+	height: 30px;
+    border:;
+}
+
+div.msyn {
+	position:relative;
+	top:53px;
+	left:100px;
+	right:;
+	bottom:;
+    width: 350px;
+	height: 240px;
+    border: 1px solid gray;
+	background-color:#E6E6FA;
+	border-radius: 10px
+}
+
+.msyn ul li{
+	margin-top: 5px;
+	padding-left: 10px;
+	font-style: italic;
+	font-size: 13px;
+	list-style:none;
+}
+
+.msyn ol li{
+	margin-top: 5px;
+	padding-left: 10px;
+	font-size: 15px;
+	text-overflow: ellipsis;
+	list-style:none;
+}
+
+div.emp {
+	position:relative;
+	top:3520px;
+	left:;
+	right:;
+	bottom:px;
+    width: 500px;
+	height: 120px;
+    border:;
+}
+
+div.mor {
+	position:relative;
+	top:48px;
+	left:235px;
+	right:;
+	bottom:;
+    width: 100px;
+	height: 30px;
+    border: ;
+}
+
+.mor form input{
+	width: 100px;
+	height: 30px;
+	background-color: #c0f2f2;
+	border-radius: 10px
+}
+

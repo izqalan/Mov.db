@@ -51,16 +51,48 @@
 	<form class="animated zoomIn big-search" id="searchForm" method="post" action="find.php">
 		<input class="search" id="searchText" type="text" name="search" placeholder="search database" />
 		<select id="select" name="select" class="sm-select">
-			<option value="name">Name</option>
-			<option value="lang">Language</option>
-			<option value="rate">Rating</option>
-			<option value="genre">Genre</option>
-			<option value="studio">Studio</option>
-			<option value="director">Director</option>
+			<option value="MovName">Name</option>
+			<option value="MovLang">Language</option>
+			<option value="MovRating">Rating</option>
+			<option value="MovGenre">Genre</option>
+			<option value="MovStudio">Studio</option>
+			<option value="MovDirector">Director</option>
 		</select>
 		<input class="submit" type="submit" name="submit" value="search"/>
 	</form>
 	
+	</form>
+	
+	<div class = "poster1">
+		<a href="">
+			<img src="poster/1.jpg" width="200px" height="300px">
+		</a>
+	</div>
+	
+	<div class= "poster2">
+		<a href="">
+			<img src="poster/2.jpg" width="200px" height="300px">
+		</a>
+	</div>
+	
+	<div class= "poster3">
+		<a href="">
+			<img src="poster/3.jpg" width="200px" height="300px">
+		</a>
+	</div>
+	
+	<div class= "poster4">
+		<a href="">
+			<img src="poster/4.jpg" width="200px" height="300px">
+		</a>
+	</div>
+	
+	<div class= "poster5">
+		<a href="">
+			<img src="poster/5.jpg" width="200px" height="300px">
+
+		</a>
+	</div>
 	
 	<!-- end content -->
 	<footer class="footer">
