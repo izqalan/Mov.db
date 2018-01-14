@@ -35,9 +35,8 @@
 	
 </div>
 <br><br>
-<div class="vertical" id="rotate-bar">
-	<span onclick="openNav()"">&#9776;<!--burger icon--> </span>
-	<span onclick="openNav()"> Database Access </span>
+<div class="vertical" id="rotate-bar"> <!-- passs id to js to open the sidebar-->
+	<span class="animated fadeInLeft" onclick="openNav()">&#9776;<!--burger icon-->Database Access </span>
 </div>
 
 
@@ -65,6 +64,7 @@
 	
 	<!-- end content -->
 	<script>
+		
 		function openNav() {
     		document.getElementById("left-sidenav").style.width = "15%";
 		}

@@ -22,7 +22,7 @@
 		</a>
 
 		<ul>
-			<li><a href="admin.php"><?php echo $_SESSION["UID"]; ?></a></li>
+			<li><a href="profile.php"><?php echo $_SESSION["UID"]; ?></a></li>
 			<li><a href="index.php">Home</a></li>
 			<li><a href="list.php">Lists</a></li>
 			<li><a href="logout.php">Logout</a></li>

@@ -191,8 +191,8 @@ border-radius:5px;
 .vertical{
 	cursor: pointer;
 	z-index: -1;
-	margin-left: 2%;
-	font-size: 20pt;
+	margin-left: 1.5%;
+	font-size: 24pt;
 	transform: rotate(90deg);
 	transform-origin: 0;
 }
