@@ -31,7 +31,18 @@
 		</ul>
 	</div>
 	<!-- content -->
+<div id="left-sidenav" class="sidenav">
 
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;<!--multiplication code--></a>
+	<a href="chooseRecord.php">Delete record</a>
+	<a href="chooseEdit.php">Edit record</a>
+	<a href="add.php">Add record</a>
+	
+</div>
+<br><br>
+<div class="vertical" id="rotate-bar"> <!-- passs id to js to open the sidebar-->
+	<span class="animated fadeInLeft" onclick="openNav()">&#9776;<!--burger icon-->Database Access </span>
+</div>
 	<div class="content">
 		<h1>Online Film Registration</h1><br><br>
 			<form action="addMov.php" method="post">
@@ -49,6 +60,16 @@
 			</form>
 	</div>
 	<!-- end content-->
+	<script>
+		
+		function openNav() {
+    		document.getElementById("left-sidenav").style.width = "15%";
+		}
+
+		function closeNav() {
+    		document.getElementById("left-sidenav").style.width = "0";
+		}
+	</script>
 	<footer class="footer">
 		<p style="font-size: 8pt;"><i>© 2017 Izqalan, Nu'man, Yew CS, Wan .E SOME RIGHT RESERVED<i></p>
 	</footer>

@@ -32,7 +32,18 @@
 		</ul>
 
 	</div>
-	<marquee behavior="scroll" direction="left"><h3> WELCOME, Mov.db <?php echo $_SESSION["UID"];?> </h3></marquee>
+	<div id="left-sidenav" class="sidenav">
+
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;<!--multiplication code--></a>
+	<a href="chooseRecord.php">Delete record</a>
+	<a href="chooseEdit.php">Edit record</a>
+	<a href="add.php">Add record</a>
+	
+</div>
+<br><br>
+<div class="vertical" id="rotate-bar"> <!-- passs id to js to open the sidebar-->
+	<span class="animated fadeInLeft" onclick="openNav()">&#9776;<!--burger icon-->Database Access </span>
+</div>
 	<?php
 
 
@@ -108,6 +119,16 @@ while($row = mysqli_fetch_array($resultGet,MYSQLI_BOTH)) {
 
 
 	<!-- end content -->
+	<script>
+		
+		function openNav() {
+    		document.getElementById("left-sidenav").style.width = "15%";
+		}
+
+		function closeNav() {
+    		document.getElementById("left-sidenav").style.width = "0";
+		}
+	</script>
 	<footer class="footer">
 		<p style="font-size: 8pt;"><i>© 2017 Izqalan, Nu'man, Yew CS, Wan .E SOME RIGHT RESERVED<i></p>
 	</footer>
