@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 	<title>Mov.db</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/box.css">
+
 	<link rel="stylesheet" type="text/css" href="css/animate.css"></style>
 </head>
 <body>
@@ -41,19 +41,21 @@
 	$poster="poster/".$row['MovID'].".jpg";
 	?><table>
 			<td>
-				<div class="mid">
-					<?php echo "<img src='".$poster."' width='200px' height='300px'>";?>
+				<div class="mid-MovDet">
+					<?php echo "<img src='".$poster."' width='300px' height='450px'>";?>
 				</div>
 			</td>
 			<td>
 				<div class="mname">
 					<p><?php echo $row['MovName'];?></p>
 				</div>
-				<div class="msyn">
+				<div class="msyn-MovDet">
 					<ul>
 						<li>Language: <?php echo $row['MovLang'];?></li>
 						<li>Rating: <?php echo $row['MovRating'];?></li>
-						<li>Genre: <?php echo $row['MovGenre'];?></li><br>
+						<li>Genre: <?php echo $row['MovGenre'];?></li>
+						<li>Director: <?php echo $row['MovDirector'];?></li>
+						<li>Studio: <?php echo $row['MovStudio']; ?></li><br>
 					</ul>
 					<ol>
 						<li>Synopsis:<br><?php echo ($row['MovSynopsis']);?></li>
@@ -61,7 +63,6 @@
 					
 				</div>
 			</td>
-			<td><div class="next"></div></td>
 	</table>
 
 	
