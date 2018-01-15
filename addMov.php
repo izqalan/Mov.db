@@ -37,8 +37,7 @@
 				{
 
 					echo"Record has been added";
-					sleep(2);
-					header("location: add.php");
+					sleep(1);
 				}
 			}
 			else

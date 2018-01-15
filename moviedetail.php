@@ -14,18 +14,43 @@
 </style> 
 </head>
 <body>
+	<?php
+		session_start();
+		if(isset($_SESSION['UID']))
+		{
+
+
+	?>
 	<div class="navbar">
 		<a href="index.php">
 			<img src="src/logow.png" height="30px" alt="mov.db logo" width="100px" >
 		</a>
+
 		<ul>
 			<li><a href="index.php">Home</a></li>
 			<li><a href="list.php">Lists</a></li>
-			<li><a href="login.php">Login</a></li>
+			<li><a href="logout.php">Logout</a></li>
+		</ul>
+	</div>
+	<?php 
+		}else{
+
+
+	?>
+	<div class="navbar">
+		<a href="index.php">
+			<img src="src/logow.png" height="30px" alt="mov.db logo" width="100px" >
+		</a>
+
+		<ul>
+			<li><a href="index.php">Home</a></li>
+			<li><a href="list.php">Lists</a></li>
+			<li><a href="login.html">Login</a></li>
 		</ul>
 	</div>
 	
 	<?php
+}
 	include('connection.php');
 
 	$detail = @$_POST['detail']; /* huh ? what is zis ? why did it work ? */
@@ -42,6 +67,7 @@
 	$query = mysqli_query($con, "SELECT * FROM movies WHERE MovID ='".$_POST['detail']."'") or die();
 	$row = mysqli_fetch_array($query, MYSQLI_ASSOC);
 	$poster="poster/".$row['MovID'].".jpg";
+	$video="video/".$row['MovID'].".mp4";
 	?><table>
 			<td>
 				<div class="mid-MovDet">
@@ -63,10 +89,17 @@
 					<ol>
 						<li>Synopsis:<br><?php echo ($row['MovSynopsis']);?></li>
 					</ol>
-					
 				</div>
 			</td>
+
 	</table>
+
+<center><br><br><br><br><br>
+	<h1>Trailer</h1>
+	<video width="360" controls>
+		<?php echo "<source src='".$video."' type='video/mp4'>"; ?>
+	</video>
+</center>
 
 	
 </body>

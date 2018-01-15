@@ -11,6 +11,26 @@
 	<link rel="stylesheet" type="text/css" href="css/animate.css"></style>
 </head>
 <body>
+		<?php
+		session_start();
+		if(isset($_SESSION['UID']))
+		{
+
+
+	?>
+	<div class="navbar">
+		<a href="index.php">
+			<img src="src/logow.png" height="30px" alt="mov.db logo" width="100px" >
+		</a>
+		<ul>
+			<li><a href="index.php">Home</a></li>
+			<li><a href="list.php">Lists</a></li>
+			<li><a href="logout.php">Logout</a></li>
+		</ul>
+	</div>
+	<?php 
+		}else{
+	?>
 	<div class="navbar">
 		<a href="index.php">
 			<img src="src/logow.png" height="30px" alt="mov.db logo" width="100px" >
@@ -23,6 +43,7 @@
 	</div>
 	
 	<?php
+}
 	include('connection.php');
 
 
@@ -39,9 +60,10 @@
 	$query = mysqli_query($con, "SELECT * FROM movies WHERE MovID ='2' ") or die();
 	$row = mysqli_fetch_array($query, MYSQLI_ASSOC);
 	$poster="poster/".$row['MovID'].".jpg";
-	?><table>
+	?>
+	<table>
 			<td>
-				<div class="mid">
+				<div class="mid-MovDet">
 					<?php echo "<img src='".$poster."' width='300px' height='450px'>";?>
 				</div>
 			</td>
@@ -49,7 +71,7 @@
 				<div class="mname">
 					<p><?php echo $row['MovName'];?></p>
 				</div>
-				<div class="msyn">
+				<div class="msyn-MovDet">
 					<ul>
 						<li>Language: <?php echo $row['MovLang'];?></li>
 						<li>Rating: <?php echo $row['MovRating'];?></li>
@@ -63,7 +85,12 @@
 			</td>
 			<td><div class="next"></div></td>
 	</table>
-
+<center><br><br><br>
+	<h1>Trailer</h1>
+	<video width="360" controls>
+		<?php echo "<source src='video/2.mp4' type='video/mp4'>"; ?>
+	</video>
+</center>
 	
 </body>
 </html>
