@@ -54,7 +54,7 @@
 		
 		echo("<table>");?>
 		<tr> <?php
-		$query = mysqli_query($con, "SELECT * FROM movies WHERE ".$option." LIKE '%".$searchq."%' limit 2 offset ".$offset."") or die();
+		$query = mysqli_query($con, "SELECT * FROM movies WHERE ".$option." LIKE '%".$searchq."%' limit 2 offset ".$offset."");
 		
 		while ($row = mysqli_fetch_array($query, MYSQLI_ASSOC)) {
 			$poster="poster/".$row['MovID'].".jpg";
@@ -85,16 +85,16 @@
 				</div>
 			</td>
 			<td><div class="next"></div></td><?php
-		}?>
+		}?> 
 		</tr><tr><br></tr><?php $offset += 2;
 		$counter++;
-		}
 		
+		}
 		echo "</table>";
 		?></div>
 		<?php
-	}
-	?>
+	
+	} ?>
 	
 </body>
 </html>

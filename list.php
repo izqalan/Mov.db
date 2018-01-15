@@ -69,7 +69,7 @@
 			?>
 			<td>
 				<div class="mid">
-					<?php echo "<img src='".$poster."' width='200px' height='300px'>";?>
+					<?php echo "<img src='".$poster."' width='200px' height='300px' alt='This is a movie poster'>";?>
 				</div>
 			</td>
 			<td>

@@ -51,7 +51,7 @@
           <input type="hidden" name="MovID" value="<?php echo $row['MovID'];?>">
   				<input class="sm-form" type="text" value="<?php echo $row['MovName'];?>" name="MovName" placeholder="Title" >
   				<input class="sm-form" type="text" value="<?php echo $row['MovLang'];?>" name="MovLang" placeholder="Language"><br><br>
-  				<input class="sm-form" type="text" value="<?php echo $row['MovRating'];?>" name="MovRating" placeholder="Rating">
+  				<input class="sm-form" type="text" maxlength="4" value="<?php echo $row['MovRating'];?>" name="MovRating" placeholder="Rating">
   				<input class="sm-form" type="text" value="<?php echo $row['MovGenre'];?>" name="MovGenre" placeholder="Genre"><br><br>
   				<input class="sm-form" type="number" value="<?php echo $row['MovDuration'];?>" name="MovDuration" placeholder="Duration">
   				<input class="sm-form" type="date" value="<?php echo $row['MovDate'];?>" name="MovDate" placeholder="Date"><br><br>

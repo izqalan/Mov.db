@@ -56,7 +56,7 @@
 	}
 	else
 	{
-		$queryGet = "select * from movies";
+		$queryGet = "SELECT * FROM movies order by MovDate desc";
 		$resultGet = mysqli_query($con, $queryGet);
 ?>
 <center>

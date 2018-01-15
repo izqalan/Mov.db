@@ -105,8 +105,8 @@ while($row = mysqli_fetch_array($resultGet,MYSQLI_BOTH)) {
 		</a>
 
 		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="list.html">Lists</a></li>
+			<li><a href="index.php">Home</a></li>
+			<li><a href="list.php">Lists</a></li>
 			<li><a href="login.html">Login</a></li>
 		</ul>
 	</div>
