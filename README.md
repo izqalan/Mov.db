@@ -2,7 +2,7 @@
 [![License: CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/4.0/80x15.png)](https://creativecommons.org/licenses/by-sa/4.0/)
 # mov.db
 Mov.db is a film database.
-<i>Maybe I might put it online </i>
+<i>Maybe I might put it online. Maybe </i>
 <h2>Notes</h2>
 <a href="https://docs.google.com/spreadsheets/d/1rpa5IFIgN-QGYvvBqMCMRwjlslYvt6cs9BjT8GDqTEA/edit?usp=sharing"> <em>Database</em></a>
 <h2>Planned features</h2>
